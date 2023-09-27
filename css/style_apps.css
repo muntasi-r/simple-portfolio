@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+header {
+    padding: 0 15px 0 15px;
+    max-width: 960px;
+    min-width: 370px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 320px 1fr 320px;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    /* gap: 40px; */
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: rgb(61, 54, 54);
+}
+
+nav ul li:hover a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    font-size: 15px;
+}
+
+.logo img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 5px 0 5px;
+    /* border: 1px solid yellow; */
+}
+
+main {
+    max-width: 960px;
+    margin: 100px auto 0 auto;
+    /* border: 1px solid black; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+main img {
+    width: 30%;
+    height: auto;
+    /* margin: 440px; */
+}
+
+main input {
+    height: 40px;
+    min-width: 140px;
+    box-shadow: 0px 0px 1px rgb(89, 92, 92);
+}
+
+@media screen and (max-width:768px) {
+    nav ul li:hover {
+        /* border: 1px solid #eeeeee; */
+        background-color: #eeeeee;
+    }
+
+    header {
+        padding: 15px;
+        height: auto;
+        display: block;
+        font-size: 15px;
+    }
+
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 10px;
+        margin-left: -40px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    nav ul li {
+        padding: 10px;
+        margin-left: -40px;
+    }
+
+    nav ul li:hover {
+        /* border: 1px solid #eeeeee; */
+        background-color: #eeeeee;
+    }
+}
+
+@media screen and (max-width:365px) {
+    main {
+        min-width: 365px;
+        /* height: auto; */
+        /* display: block; */
+    }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+}
+
+/* @media screen and (min-width:768px) {} */
+
+/* @media screen and (min-width:960px) {} */
